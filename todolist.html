@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ToDo List</title>
+  <link rel="stylesheet" href="CSS/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>ToDo List</h1>
+    <form id="todolist">
+      <div class="form-row">
+        <input type="text" id="tugasin" placeholder="Masukkan tugas..." required />
+        <input type="date" id="tanggalin" required />
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+
+    
+      <button class="btn-delete" id="delete-all">Delete All</button>
+
+      <!-- filter -->
+      <select id="filter-select">
+        <option value="all">all</option>
+        <option value="done">done</option>
+        <option value="undone">undone</option>
+      </select>
+
+    <div  class="container1" id="task-list">
+      <!-- kolom tugas -->
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
